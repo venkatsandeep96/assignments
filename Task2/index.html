@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Styles</title>
+<style>
+    /* Define color shades in rgba format */
+    :root {
+        --blue-shade: rgba(30, 144, 255, 0.8); /* Blue */
+        --gray-shade: rgba(128, 128, 128, 0.8); /* Gray */
+        --green-shade: rgba(60, 179, 113, 0.8); /* Green */
+        --red-shade: rgba(220, 20, 60, 0.8); /* Red */
+    }
+
+    /* Button styles */
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Primary Button */
+    .primary {
+        background-color: var(--blue-shade);
+        color: black;
+    }
+
+    /* Secondary Button */
+    .secondary {
+        background-color: var(--gray-shade);
+        color: white;
+    }
+
+    /* Success Button */
+    .success {
+        background-color: var(--green-shade);
+        color:  red;
+    }
+
+    /* Danger Button */
+    .danger {
+        background-color: var(--red-shade);
+        color: green;
+    }
+
+    /* Hover state */
+    .button:hover {
+        opacity: 0.9;
+    }
+
+    /* Active state */
+    .button:active {
+        transform: translateY(1px);
+    }
+</style>
+</head>
+<body>
+    <!-- Primary Button -->
+    <button class="button primary">Primary Button</button>
+
+    <!-- Secondary Button -->
+    <button class="button secondary">Secondary Button</button>
+
+    <!-- Success Button -->
+    <button class="button success">Success Button</button>
+
+    <!-- Danger Button -->
+    <button class="button danger">Danger Button</button>
+</body>
+</html>

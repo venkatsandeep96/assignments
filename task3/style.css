@@ -1,0 +1,12 @@
+/* Style for sections */
+/* Style for h1 text */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+/* Style for short description */
+p {
+    font-size: 1.2em;
+    color: #555;
+}

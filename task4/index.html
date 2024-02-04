@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery with Hover Effect</title>
+<style>
+    /* Gallery container */
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    /* Individual image container */
+    .image-container {
+        margin: 10px;
+        position: relative;
+    }
+
+    /* Image styles */
+    .image {
+        width: 800px;
+        height: 800px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    /* Hover effect */
+    .image-container:hover .image {
+        transform: scale(1.1);
+    }
+
+    /* Image description */
+    .image-description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 100px;
+        border-radius: 5px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    /* Show image description on hover */
+    .image-container:hover .image-description {
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+    <div class="gallery">
+        <!-- Image 1 -->
+        <div class="image-container">
+            <img class="image" src="Beautiful Nature Reflection Landscape Wallpaper HD.jpg" alt="Image 1">
+            <div class="image-description">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur repellendus quis magni blanditiis consectetur. Asperiores possimus, vero officia voluptas unde culpa aliquid modi blanditiis? Nam hic reprehenderit molestiae quo voluptatem.</p>
+            </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="image-container">
+            <img class="image" src="green-nature-19.jpg" alt="Image 2">
+            <div class="image-description">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto ullam sit cumque animi nihil vitae ipsam laborum autem, quos a nisi! Distinctio, quaerat molestias iste veniam totam suscipit facilis ratione.</p>
+            </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="image-container">
+            <img class="image" src="ixmt8JQ.jpg" alt="Image 3">
+            <div class="image-description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, at. Nesciunt quam tenetur facilis illum animi perferendis enim dolor voluptate veritatis corporis ad non nisi blanditiis, optio ut, deleniti dignissimos?</p>
+            </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="image-container">
+            <img class="image" src="lake-nature-night-reflection-r1.jpg" alt="Image 4">
+            <div class="image-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae, dignissimos officiis molestias fugit laborum dolor quod deleniti, est sunt explicabo cumque tempora at consequatur tenetur mollitia nesciunt et molestiae!</p>
+            </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="image-container">
+            <img class="image" src="nature_wallpaper_07.jpg" alt="Image 5">
+            <div class="image-description">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio sint aspernatur vitae unde cum accusamus deleniti quam ducimus dolorem, error quaerat. Asperiores, distinctio! Veritatis, harum iste praesentium necessitatibus aliquam amet.</p>
+            </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="image-container">
+            <img class="image" src="Nature-Wallpaper-Desktop-64.jpg" alt="Image 6">
+            <div class="image-description">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum iusto? Deleniti, beatae labore consequatur veritatis voluptatem ex iste iusto ipsum vitae? Repellendus nihil cumque beatae deleniti veniam neque fugiat.</p>
+            </div>
+        </div>
+
+        <!-- Image 7 -->
+        <div class="image-container">
+            <img class="image" src="th.jpeg" alt="Image 7">
+            <div class="image-description">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime numquam, laboriosam eveniet cumque ratione quo, voluptas aliquam nostrum quasi architecto tenetur dolor necessitatibus ipsum. Architecto deleniti alias fugiat. Magnam, maiores.</p>
+            </div>
+        </div>
+
+        <!-- Image 8 -->
+        <div class="image-container">
+            <img class="image" src="wp3158676.jpg" alt="Image 8">
+            <div class="image-description">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime numquam, laboriosam eveniet cumque ratione quo, voluptas aliquam nostrum quasi architecto tenetur dolor necessitatibus ipsum. Architecto deleniti alias fugiat. Magnam, maiores.</p>
+            </div>
+        </div>
+
+        <!-- Image 9 -->
+        <div class="image-container">
+            <img class="image" src="th (2).jpeg" alt="Image 9">
+            <div class="image-description">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime numquam, laboriosam eveniet cumque ratione quo, voluptas aliquam nostrum quasi architecto tenetur dolor necessitatibus ipsum. Architecto deleniti alias fugiat. Magnam, maiores.</label></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
